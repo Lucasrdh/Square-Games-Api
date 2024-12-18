@@ -9,14 +9,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 public interface GameService {
-    public List<Game> getAllGames();
-
-
-//    Token getTokenWithName(Game game, String tokenName);
-
-    String createGame(@RequestBody GameCreationParams params);
-
-    Game updateGame(Game game);
-
-    public ResponseEntity<String> deleteGame(@PathVariable String gameId);
+Game createGame(String gameIdentifier);
 }
