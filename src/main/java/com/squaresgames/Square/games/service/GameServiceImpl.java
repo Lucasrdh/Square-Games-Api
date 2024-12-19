@@ -1,6 +1,7 @@
 package com.squaresgames.Square.games.service;
 
 import com.squaresgames.Square.games.modele.GameCatalog;
+import com.squaresgames.Square.games.plugins.GamePlugin;
 import fr.le_campus_numerique.square_games.engine.Game;
 import fr.le_campus_numerique.square_games.engine.GameFactory;
 import fr.le_campus_numerique.square_games.engine.Token;
@@ -19,7 +20,7 @@ import static com.fasterxml.jackson.databind.type.LogicalType.Collection;
 @Service
 public class GameServiceImpl implements GameService {
     @Autowired
-    private GameCatalog gameCatalog;
+    private GamePlugin gamePlugin;
     private GameFactory gameFactory;
     private List<Game> games = new ArrayList<>();
 
