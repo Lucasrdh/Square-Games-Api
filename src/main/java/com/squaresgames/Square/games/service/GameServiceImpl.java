@@ -36,15 +36,7 @@ public class GameServiceImpl implements GameService {
         games.add(game);
         return game.getId().toString();
     }
-//    @Override
-//    private static Token getTokenWithName(Game game, String tokenName) {
-//        return Stream.of(game.getRemainingTokens(), game.getRemovedTokens(), game.getBoard().values())
-//                .flatMap(Collection::stream)
-//                .filter(t -> t.getName().equals(tokenName))
-//                .filter(t -> t.canMove())
-//                .findFirst()
-//                .orElse(null);
-//    }
+
     @Override
     public Game updateGame(Game game) {
         return null;
