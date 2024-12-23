@@ -1,6 +1,5 @@
 package com.squaresgames.Square.games.modele.plugin;
 
-import com.squaresgames.Square.games.modele.GamePlugin;
 import fr.le_campus_numerique.square_games.engine.Game;
 import fr.le_campus_numerique.square_games.engine.tictactoe.TicTacToeGameFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,7 @@ public class TicTacToePlugin implements GamePlugin {
 
     @Override
     public String getName(Locale locale) {
-        return messageSource.getMessage("messages.tictactoe.title", null, locale);
+        return messageSource.getMessage("game.tictactoe.name", null, locale);
     }
     @Override
     public Game createGame(OptionalInt playerCount, OptionalInt boardSize) {

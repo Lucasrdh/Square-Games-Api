@@ -1,9 +1,8 @@
-package com.squaresgames.Square.games.service;
+package com.squaresgames.Square.games.service.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-import java.lang.annotation.Native;
 
 public class GameCreationParamsDTO {
     @NotNull(message = "Game ne peut pas être null.")

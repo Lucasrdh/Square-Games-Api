@@ -1,19 +1,8 @@
 package com.squaresgames.Square.games.service;
-
-import com.squaresgames.Square.games.modele.GameCatalog;
-import com.squaresgames.Square.games.modele.GamePlugin;
+import com.squaresgames.Square.games.modele.plugin.GamePlugin;
 import fr.le_campus_numerique.square_games.engine.Game;
-import fr.le_campus_numerique.square_games.engine.GameFactory;
-import fr.le_campus_numerique.square_games.engine.Token;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-
 import java.util.*;
-import java.util.stream.Stream;
-
 
 @Service
 public class GameServiceImpl implements GameService {

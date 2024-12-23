@@ -1,4 +1,4 @@
-package com.squaresgames.Square.games.modele;
+package com.squaresgames.Square.games.modele.plugin;
 
 import fr.le_campus_numerique.square_games.engine.Game;
 import jakarta.validation.constraints.NotBlank;

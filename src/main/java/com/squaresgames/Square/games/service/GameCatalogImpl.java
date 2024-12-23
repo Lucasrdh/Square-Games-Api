@@ -1,13 +1,8 @@
 package com.squaresgames.Square.games.service;
 
 import com.squaresgames.Square.games.modele.GameCatalog;
-import com.squaresgames.Square.games.modele.GamePlugin;
+import com.squaresgames.Square.games.modele.plugin.GamePlugin;
 import fr.le_campus_numerique.square_games.engine.Game;
-import fr.le_campus_numerique.square_games.engine.GameFactory;
-import fr.le_campus_numerique.square_games.engine.connectfour.ConnectFourGameFactory;
-import fr.le_campus_numerique.square_games.engine.taquin.TaquinGame;
-import fr.le_campus_numerique.square_games.engine.taquin.TaquinGameFactory;
-import fr.le_campus_numerique.square_games.engine.tictactoe.TicTacToeGameFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,10 +18,10 @@ public class GameCatalogImpl implements GameCatalog {
     }
 
     @Override
-    public Collection<String> getGameIdentifiers() {
+    public Collection<String> getGameIdentifiers(Locale locale) {
         List<String> gameIdentifiers = new ArrayList<>();
         for (GamePlugin plugin : gamePlugins) {
-            gameIdentifiers.add(plugin.getName(Locale.getDefault()));
+            gameIdentifiers.add(plugin.getName(locale));
         }
         return gameIdentifiers;
     }

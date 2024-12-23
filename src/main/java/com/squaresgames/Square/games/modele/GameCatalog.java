@@ -4,9 +4,10 @@ import fr.le_campus_numerique.square_games.engine.Game;
 import fr.le_campus_numerique.square_games.engine.GameFactory;
 
 import java.util.Collection;
+import java.util.Locale;
 
 public interface GameCatalog {
-    Collection<String> getGameIdentifiers();
+    Collection<String> getGameIdentifiers(Locale locale);
 
     Collection<Game> getGames();
 
